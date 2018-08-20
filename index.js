@@ -11,9 +11,9 @@ function setCart(c) {
 
 function addToCart(item) {
  // write your code here
- let obj = JSON.parse(item);
- cart.push(`itemName: ${obj.itemName}, itemPrice: ${obj.itemPrice}`)
- return cart
+// let obj = JSON.parse(item);
+// cart.push(`itemName: ${obj.itemName}, itemPrice: ${obj.itemPrice}`)
+// return cart
 }
 
 function viewCart() {
