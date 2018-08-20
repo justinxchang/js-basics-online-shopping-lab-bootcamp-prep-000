@@ -12,7 +12,7 @@ function setCart(c) {
 function addToCart(item) {
  // write your code here
  let obj = JSON.parse(item);
- cart.push(`itemName: ${item.itemName}, itemPrice: ${item.itemPrice}`)
+ cart.push(`itemName: ${obj.itemName}, itemPrice: ${obj.itemPrice}`)
  return cart
 }
 
