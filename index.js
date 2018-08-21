@@ -23,8 +23,8 @@ function viewCart() {
     return "Your shopping cart is empty."
   } else {
   for(let i = 0; i<cart.length; i++){
-    // newArray.push(` ${cart[i].itemName} at \$${cart[i].itemPrice}`);
-    newArray.push(` and ${cart[i.length].itemName} at \$${cart[i.length].itemPrice}`)
+    newArray.push(` ${cart[i].itemName} at \$${cart[i].itemPrice}`);
+    newArray.push(` ${cart[i.length].itemName} at \$${cart[i.length].itemPrice}`)
   }
   }
   return `In your cart, you have${newArray}.`
