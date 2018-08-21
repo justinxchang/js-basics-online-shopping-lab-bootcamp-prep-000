@@ -24,10 +24,12 @@ function viewCart() {
   } else {
   for(let i = 0; i<cart.length - 1; i++){
     newArray.push(` ${cart[i].itemName} at \$${cart[i].itemPrice}`);
+    newArray.push(` and ${cart[i.length].itemName} at \$${cart[i.length].itemPrice}`)
   }
-  return `In your cart, you have${newArray}, and ${cart[i.length].itemName} at \$${cart[i.length].itemPrice}`
   }
+  return `In your cart, you have${newArray}`
 }
+
 
 function total() {
   // write your code here
