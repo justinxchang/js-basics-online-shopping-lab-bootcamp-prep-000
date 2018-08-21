@@ -18,9 +18,11 @@ function addToCart(item) {
 
 function viewCart() {
   // write your code here
+  let newArray = [];
   for(let i = 0; i<cart.length; i++){
-    
+    newArray.push(`${cart.itemName} at \$${cart.itemPrice}`);
   }
+  return `In your cart, you have ${newArray}`
 }
 
 function total() {
