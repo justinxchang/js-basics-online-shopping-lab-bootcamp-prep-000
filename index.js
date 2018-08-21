@@ -19,7 +19,7 @@ function addToCart(item) {
 function viewCart() {
   // write your code here
   let newArray = [];
-  for(let i = 0; i<cart.length - 1; i++){
+  for(let i = 0; i<cart.length; i++){
     newArray.push(` ${cart[i].itemName} at \$${cart[i].itemPrice}.`);
   }
   return `In your cart, you have${newArray}`
