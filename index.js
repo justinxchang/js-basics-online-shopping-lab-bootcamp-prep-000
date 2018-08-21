@@ -24,9 +24,10 @@ function viewCart() {
   } else {
   for(let i = 0; i<cart.length - 1; i++){
     newArray.push(` ${cart[i].itemName} at \$${cart[i].itemPrice}`);
-  } debugger;
-  
+  } 
+    debugger
     newArray.push(` and ${cart[cart.length].itemName} at \$${cart[cart.length].itemPrice}`)
+
   }
   return `In your cart, you have${newArray}.`
 }
