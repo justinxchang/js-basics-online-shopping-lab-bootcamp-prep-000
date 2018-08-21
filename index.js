@@ -46,7 +46,7 @@ function removeFromCart(item) {
   // write your code here
   for(let i = 0; i<cart.length; i++){
     if(cart[i].itemName == item){
-      cart.splice(cart[i].itemName[i], 0)
+      return cart.splice(cart[i].itemName[i], 0)
     } else {
       return "That item is not in your cart."
     }
