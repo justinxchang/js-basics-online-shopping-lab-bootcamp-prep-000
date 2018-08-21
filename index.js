@@ -31,7 +31,6 @@ function viewCart() {
     }
     newArray.push(` and ${cart[cart.length].itemName} at \$${cart[cart.length].itemPrice}`)
   }
-  }
   return `In your cart, you have${newArray}.`;
 }
 
