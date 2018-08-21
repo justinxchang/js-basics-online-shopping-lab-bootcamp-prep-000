@@ -11,7 +11,7 @@ function setCart(c) {
 
 function addToCart(item) {
  // write your code here
- var obj = {itemName: item, itemPrice: Math.floor(Math.Random())};
+ var obj = {itemName: item, itemPrice: Math.floor(Math.Random()*100)};
  
 }
 
