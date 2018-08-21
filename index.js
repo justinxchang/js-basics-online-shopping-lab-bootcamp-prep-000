@@ -22,8 +22,8 @@ function viewCart() {
   if(cart.length === 0){
     return "Your shopping cart is empty."
   } else {
-  for(let i = 0; i<cart.length; i++){
-    newArray.push(` ${cart[i].itemName} at \$${cart[i].itemPrice}.`);
+  for(let i = 0; i<cart.length-1; i++){
+    newArray.push(` ${cart[i].itemName} at \$${cart[i].itemPrice}, and ${cart[i.length].itemName} at \$${cart[i.length].itemPrice}.`);
   }
   return `In your cart, you have${newArray}`
   }
