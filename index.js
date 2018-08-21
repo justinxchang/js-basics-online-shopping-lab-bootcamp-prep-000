@@ -19,10 +19,14 @@ function addToCart(item) {
 function viewCart() {
   // write your code here
   let newArray = [];
+  if(cart.length === 0){
+    return "Your shopping cart is empty."
+  } else {
   for(let i = 0; i<cart.length; i++){
     newArray.push(` ${cart[i].itemName} at \$${cart[i].itemPrice}.`);
   }
   return `In your cart, you have${newArray}`
+  }
 }
 
 function total() {
